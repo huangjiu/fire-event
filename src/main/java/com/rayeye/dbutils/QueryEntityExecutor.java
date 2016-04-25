@@ -86,7 +86,7 @@ public class QueryEntityExecutor<T> extends
 	public List<T> list() throws SQLException {
 		// execute using the BeanHandler
 		QueryExecutor exec = buildQueryExecutor();
-		return exec.execute(new BeanListHandler((Class<T>) entity));
+		return (List<T>) exec.execute(new BeanListHandler((Class<T>) entity));
 	}
 
 	public T uniqueResult() throws SQLException {
