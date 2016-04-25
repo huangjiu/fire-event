@@ -16,36 +16,36 @@ public class DbutilsRepositoryTest2 {
 	
 	@BeforeClass
 	public static void setUp(){
-		DataSource ds = Config.dataSource();
-		QueryRunner  db = new QueryRunner(ds);
-		repo = new Times2Repo();
-		repo.setDb(db);
+//		DataSource ds = Config.dataSource();
+//		QueryRunner  db = new QueryRunner(ds);
+//		repo = new Times2Repo();
+//		repo.setDb(db);
 	}
 
 	@Test
 	public void testInsert() {
-		Times2 t = new Times2();
-		t.setId(1L);
-		t.setMonth(10);
-		t.setYear(2010);
-		t.setCreated(100L);
-		
-		repo.insert(t);
-		
-		
-		Times2 t2 = new Times2();
-		t2.setId(2L);
-		t2.setMonth(10);
-		t2.setYear(2010);
-		
-		repo.insertAttrs(t2, "year" , "id");
-		
-		Times2 t3 = new Times2();
-		t3.setId(3L);
-		t3.setMonth(10);
-		t3.setYear(2010);
-		
-		repo.insertExcludeAttrs(t3, "year");
+//		Times2 t = new Times2();
+//		t.setId(1L);
+//		t.setMonth(10);
+//		t.setYear(2010);
+//		t.setCreated(100L);
+//		
+//		repo.insert(t);
+//		
+//		
+//		Times2 t2 = new Times2();
+//		t2.setId(2L);
+//		t2.setMonth(10);
+//		t2.setYear(2010);
+//		
+//		repo.insertAttrs(t2, "year" , "id");
+//		
+//		Times2 t3 = new Times2();
+//		t3.setId(3L);
+//		t3.setMonth(10);
+//		t3.setYear(2010);
+//		
+//		repo.insertExcludeAttrs(t3, "year");
 	}
 
 

@@ -22,10 +22,10 @@ public class DbutilsRepositoryTest {
 	
 	@BeforeClass
 	public static void setUp(){
-		DataSource ds = Config.dataSource();
-		QueryRunner  db = new QueryRunner(ds);
-		repo = new TimesRepo();
-		repo.setDb(db);
+//		DataSource ds = Config.dataSource();
+//		QueryRunner  db = new QueryRunner(ds);
+//		repo = new TimesRepo();
+//		repo.setDb(db);
 	}
 
 //	@Test
@@ -88,22 +88,22 @@ public class DbutilsRepositoryTest {
 	@Test
 	public void testFindById() {
 		
-		Times t = repo.findById(1);
-		
-		assertEquals(t.getId(), 1L);
-		
-		Times t2 = repo.findByIdExcludeAttrs(1L, "year");
-		
-		System.out.println(t2.getId());
-		System.out.println(t2.getYear());
-		
-		List<Times> times = repo.findAll();
-		
-		System.out.println(times.size());
-	
-		List<Times> times2 = repo.find( M.<String,Object>ins().put2("year", 2010));
-		
-		System.out.println(times2.size());
+//		Times t = repo.findById(1);
+//		
+//		assertEquals(t.getId(), 1L);
+//		
+//		Times t2 = repo.findByIdExcludeAttrs(1L, "year");
+//		
+//		System.out.println(t2.getId());
+//		System.out.println(t2.getYear());
+//		
+//		List<Times> times = repo.findAll();
+//		
+//		System.out.println(times.size());
+//	
+//		List<Times> times2 = repo.find( M.<String,Object>ins().put2("year", 2010));
+//		
+//		System.out.println(times2.size());
 		
 	}
 

@@ -14,14 +14,14 @@ public class RedisEventBusTest {
 //		final Jedis jedis = new Jedis("127.0.0.1" , 6379);
 //		Command cmd = new RedisByteCommand(jedis);
 		
-		RedisEventBus eventBus = new RedisEventBus("127.0.0.1" , 6379);
-		
-//		for( int i = 0 ; i < 100000 ; i++) {
-			eventBus.post(new TestEvent("aaaaaddd1"));
-			eventBus.post(new TestEvent("aaaaaddd2"));
-			eventBus.post(new TestEvent2("aaaaaddd1"));
-			eventBus.post(new TestEvent2("aaaaaddd2"));
-//		}
+//		RedisEventBus eventBus = new RedisEventBus("127.0.0.1" , 6379);
+//		
+////		for( int i = 0 ; i < 100000 ; i++) {
+//			eventBus.post(new TestEvent("aaaaaddd1"));
+//			eventBus.post(new TestEvent("aaaaaddd2"));
+//			eventBus.post(new TestEvent2("aaaaaddd1"));
+//			eventBus.post(new TestEvent2("aaaaaddd2"));
+////		}
 
 		
 		

@@ -13,21 +13,21 @@ public class TimesTest {
 
 	@Test
 	public void test() throws SQLException {
-		DataSource ds = Config.dataSource();
-		QueryRunner  db = new QueryRunner(ds);
-		
-		Times t = new Times();
-		t.setId(1L);
-		t.setMonth(10);
-		t.setYear(2010);
-//		db.create(Times.class, t);
-		
-		TimesRepo repo = new TimesRepo();
-		repo.setDb(db);
-		repo.remove(t);
-		
-//		;
-		System.out.println(repo.getEntityClass());
+//		DataSource ds = Config.dataSource();
+//		QueryRunner  db = new QueryRunner(ds);
+//		
+//		Times t = new Times();
+//		t.setId(1L);
+//		t.setMonth(10);
+//		t.setYear(2010);
+////		db.create(Times.class, t);
+//		
+//		TimesRepo repo = new TimesRepo();
+//		repo.setDb(db);
+//		repo.remove(t);
+//		
+////		;
+//		System.out.println(repo.getEntityClass());
 	}
 
 }
