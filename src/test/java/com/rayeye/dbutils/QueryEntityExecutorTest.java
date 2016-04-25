@@ -16,7 +16,7 @@ public class QueryEntityExecutorTest {
 
 	@Test
 	public void testQuery() throws SQLException {
-		
+		assertNotEquals(1, 2);
 	}
 
 }
