@@ -4,7 +4,24 @@
 	<groupId>com.rayeye</groupId>
 	<artifactId>event</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
-	<name>EventBus</name>
+	<name>event</name>
+
+	<scm>
+		<url>https://github.com/huangjiu/fire-event</url>
+		<connection>scm:git:git://github.com/huangjiu/fire-event.git</connection>
+		<developerConnection>scm:git:git@github.com:huangjiu/fire-event.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<email>jihprowlet@gmail.com</email>
+			<name>Louis Huang</name>
+			<url>https://github.com/huangjiu</url>
+			<id>louis</id>
+		</developer>
+	</developers>
+
+
 
 	<repositories>
 		<repository>
@@ -89,6 +106,8 @@
 		</dependency>
 
 	</dependencies>
+	
+	
 
 	<build>
 		<plugins>
